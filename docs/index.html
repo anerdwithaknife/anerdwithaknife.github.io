@@ -22,6 +22,15 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton.css">
 
+  <style>
+    body { background-color: #201919; color: #ddd; }
+    a { color: #DC143C; text-decoration: none; }
+    a:hover { color: #FF5733; }
+    a:active { color: #FC345C; }
+    .subdued { opacity: 0.25; }
+    .toptitle { height: 100px; position: fixed; background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(32,25,25,1) 60%, rgba(32,25,25,1) 100%); }
+    .footer { color: #201919; margin-top: 20%; }
+  </style>
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="images/favicon.png">
@@ -33,13 +42,130 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <div class="container">
     <div class="row">
-      <div class="one-half column" style="margin-top: 25%">
-        <h4>Basic Page</h4>
-        <p>This index.html page is a placeholder with the CSS, font and favicon. It's just waiting for you to add some content! If you need some help hit up the <a href="http://www.getskeleton.com">Skeleton documentation</a>.</p>
+      <div class="one-full column toptitle">
       </div>
     </div>
-  </div>
+    <div class="row">
+      <div class="one-full column" style="margin: 15% 0 10% 0; position: relative; z-index: -1;">
+        <h1>anerdwithaknife<span class="subdued">.github.io</span></h1>
+        <p><em>Just another link/article/resource dump for netsec related things.</em></p>
+      </div>
+    </div>
 
+    <!-- General information
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <div class="row">
+      <div class="one-full column" style="margin-top: 10%">
+        <h4>Knowledge Bank</h4>
+        <p>Informative resources and general knowledge.</p>
+        <ul>
+          <li><a href="https://gtfobins.github.io/">GTFOBins</a></li>
+          <li><a href="https://book.hacktricks.xyz/">HackTricks</a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <!-- CTF links
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <div class="row">
+      <div class="one-full column" style="margin-top: 8%">
+        <h4>CTFs &amp; Learning</h4>
+        <p>Guided learning and/or Capture The Flag style websites to challenge yourself.</p>
+        <ul>
+          <li><a href="https://overthewire.org/">Over The Wire</a></li>
+          <li><a href="https://play.picoctf.org/">PicoCTF</a></li>
+          <li><a href="https://hack.ainfosec.com/">C4n y0u H4ck 1t</a></li>
+          <li><a href="https://lab.hackthebox.com/">HackTheBox</a></li>
+          <li><a href="https://www.tryhackme.com/">TryHackMe</a></li>
+          <li><a href="https://microcorruption.com/">Micro Corruption</a></li>
+          <li><a href="https://pwnable.kr/">Pwnable</a></li>
+          <li><a href="https://owasp.org/www-project-juice-shop/">OWASP Juice Shop</a></li>
+          <li><a href="https://www.vulnhub.com/">VulnHub</a></li>
+          <li><a href="https://los.rubiya.kr/">Lord of SQL Injection</a></li>
+          <li><a href="https://pwn.college/">pwn.college</a></li>
+          <li><a href="https://ctfsites.github.io/">The Biggest Collection Of CTF Sites</a></li>
+          <li><a href="https://ropemporium.com/">ROP Emporium</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Binary Exploitation
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <div class="row">
+      <div class="one-full column" style="margin-top: 10%">
+        <h4>Binary Exploitation</h4>
+        <p>Stack and heap corruption, format strings, shellcode etc.</p>
+        <ul>
+          <li><a href="http://phrack.org/archives/issues/49/14.txt">"Smashing The Stack For Fun And Profit" by Aleph One</a></li>
+          <li><a href="http://shell-storm.org/shellcode/index.html">Shellcodes database for study cases</a></li>
+          <li><a href="http://shell-storm.org/x86doc/index.html">Intel x86 Opcode Table and Reference</a></li>
+          <li><a href="https://itehax.com/blog/portable-executable-explained-throught-rust-code">Portable executable explained throught rust code</a></li>
+          <li><a href="https://beginners.re/">"Reverse Engineering for Beginners" (RE4B) book</a></li>
+          <li><a href="https://0xinfection.github.io/reversing/">Reverse Engineering For Everyone!</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Malware development & analysis
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <div class="row">
+      <div class="one-full column" style="margin-top: 10%">
+        <h4>Malware Analysis &amp; Development</h4>
+        <p>Stack and heap corruption, format strings, shellcode etc.</p>
+        <ul>
+          <li><a href="https://0x00sec.org/t/malware-development-essentials-for-operators/37769">Malware Development Essentials for Operators</a></li>
+          <li><a href="https://www.jaiminton.com/Tutorials/PracticalMalwareAnalysis/">Practical Malware Analysis: Lab Write-up</a></li>
+          <li><a href="https://malware-traffic-analysis.net/">Malware Traffic Analysis w/ Exercises</a></li>
+          <li><a href="https://0xpat.github.io/Malware_development_part_1/">0xPat Malware Development (Part 1)</a> (
+            Part <a href="https://0xpat.github.io/Malware_development_part_2/">2</a>
+            <a href="https://0xpat.github.io/Malware_development_part_3/">3</a>
+            <a href="https://0xpat.github.io/Malware_development_part_4/">4</a>
+            <a href="https://0xpat.github.io/Malware_development_part_5/">5</a>
+            <a href="https://0xpat.github.io/Malware_development_part_6/">6</a>
+            <a href="https://0xpat.github.io/Malware_development_part_7/">7</a>
+            <a href="https://0xpat.github.io/Malware_development_part_8/">8</a>
+            <a href="https://0xpat.github.io/Malware_development_part_9/">9</a>
+            )</li>
+          <li><a href="https://www.mandiant.com/resources/blog/tracking-malware-import-hashing">Tracking Malware with Import Hashing</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Web Security
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <div class="row">
+      <div class="one-full column" style="margin-top: 10%">
+        <h4>Web Security</h4>
+        <p>Web application security, SQL injections, XSS, CSRF/SSRF, LFI etc.</p>
+        <ul>
+          <li><a href="https://owasp.org/www-project-web-security-testing-guide/">OWASP Web Security Testing Guide (WSTG)</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Community & Publications
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <div class="row">
+      <div class="one-full column" style="margin-top: 10%">
+        <h4>Community &amp; Publications</h4>
+        <p>Zines, forums, blogs, etc.</p>
+        <ul>
+          <li><a href="https://cocomelonc.github.io/">blog: cocomelonc</a> (<a href="https://github.com/cocomelonc/meow">github</a>)</li>
+          <li><a href="https://accesscyber.co/blog/cybersecuritypodcasts">50 Cybersecurity Podcasts</a></li>
+          <li><a href="https://www.blackhillsinfosec.com/prompt-zine/">Prompt#</a></li>
+          <li><a href="https://www.2600.com/">2600 Magazine</a></li>
+          <li><a href="http://phrack.org/">Phrack</a></li>
+          <li><a href="https://vault.0x705h.com/en/ezine/40hex">40hex</a></li>
+          <li><a href="https://defacto2.net/home">Defacto2 - Retro cracking and art underground</a></li>
+          <li><a href="https://spthvx.github.io/ezines/">SPTH: VX e-Zines archive</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="column one-full footer">Nothing to see here.</div>
+    </div>
+  </div>
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>
